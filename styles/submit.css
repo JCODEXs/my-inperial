@@ -1,0 +1,136 @@
+.topBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-bottom: 1.5px solid rgba(100, 100, 100, 0.6);
+  filter: drop-shadow(0 0 0.3rem black);
+  z-index: 2;
+}
+.topBar > img {
+  height: 25px;
+}
+.submitTopBar {
+  background: black;
+}
+.loadingBar {
+  color: black;
+  /* mix-blend-mode: difference; */
+
+  margin-right: auto;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.submit {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: silver;
+  align-items: stretch;
+  justify-content: center;
+  height: 100%;
+  max-height: 100%;
+  max-width: min(95%, 1000px);
+  width: 1000px;
+
+  /* margin:auto; */
+  padding: 10px;
+  filter: drop-shadow(0 0 0.3rem black);
+  overflow: hidden;
+}
+.submit img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+.submit video {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+.priceResume {
+  display: flex;
+  /* background: black; */
+  padding: 10px 0px;
+  filter: drop-shadow(0 0 0.3rem black);
+  justify-content: center;
+  align-items: center;
+}
+.baseStyle {
+  background-color: black;
+  /* width: 100%; */
+  border-radius: 10px;
+  /* margin: auto; */
+
+  /* height: 100%; */
+  border-width: 2px;
+  border-color: #666;
+  border-style: dashed;
+  transition: all 0.3s;
+  outline: none;
+}
+
+.baseStyle:hover {
+  background: rgba(0, 0, 10, 1);
+}
+.activeStyle {
+  border-style: solid;
+  border-color: #6c6;
+  background-color: palegreen;
+  color: black;
+  /* transform: scale(1.1); */
+}
+.rejectStyle {
+  border-style: solid;
+  border-color: #c66;
+  background-color: rgb(51, 14, 14);
+  /* transform: scale(1.1); */
+}
+.thumbsContainer {
+  /* align: center; */
+  flex: 1;
+  margin-top: 16;
+  overflow: hidden;
+  padding: 10px 0px;
+}
+.dataInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 30px;
+  padding: 5px;
+  height: 100%;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+.deleteBar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+  justify-content: right;
+  background: #b8262b;
+  padding: 5px;
+  filter: drop-shadow(0 0 0.2rem rgba(10, 10, 10, 0.2));
+  overflow: hidden;
+  height: 0;
+}
+
+/* ::-webkit-scrollbar { */
+/*   width: 10px; */
+/* } */
+/* ::-webkit-scrollbar-track { */
+/*   background: rgb(5, 5, 5); */
+/* } */
+/* ::-webkit-scrollbar-thumb { */
+/*   background: linear-gradient( */
+/*     0deg, */
+/*     rgba(192, 192, 192, 0.6) 0%, */
+/*     rgba(245, 245, 245, 0.6) 100% */
+/*   ); */
+/* } */

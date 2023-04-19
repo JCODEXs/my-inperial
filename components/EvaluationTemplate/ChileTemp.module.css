@@ -1,0 +1,10 @@
+.conteiner2Xbutton{
+display:flex;
+flex-direction: row; 
+padding-left: 0.5rem; 
+align-items: center;;
+justify-content: space-around;
+ background-color:
+ rgb(79, 67, 67);
+ border-radius: 0.4rem;
+}

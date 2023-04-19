@@ -1,0 +1,19 @@
+.fullForm {
+  display: flex;
+  gap: 5px;
+}
+.flexGap {
+  display: flex;
+  gap: 5px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.submit {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}

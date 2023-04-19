@@ -1,0 +1,43 @@
+.scrollable_viewport {
+  flex: 1;
+  min-width: auto;
+  max-width: 100%;
+  overflow-y: hidden;
+  overscroll-behavior-y: contain;
+}
+.scrollable_content {
+  margin: auto;
+  height: 100%;
+}
+.listToolbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 3px;
+  background: var(--is-it-06);
+  border-radius: 5px;
+}
+.scrollable {
+  min-width: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  /* overflow: hidden; */
+}
+.loading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  .scrollable_content {
+    margin: auto;
+    max-width: 100vw;
+    height: max-content;
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,58 @@
+.main {
+  background-color: rgba(40, 40, 40);
+  justify-items: stretch;
+  position: relative;
+  flex: 1;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.infodev.ca%2Fwp-content%2Fuploads%2F2017%2F04%2F20.jpg&f=1&nofb=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper {
+  /* max-height: 100vh; */
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+}
+.main > div {
+  position: sticky;
+  top: 0px;
+  background-color: rgba(20, 20, 20, 0.3);
+  flex: 1;
+  overflow: hidden;
+  width: 500px;
+  min-width: min(500px, 100%);
+  border-radius: 10px;
+  /* transform: scale(0.99); */
+  border: solid 3px rgb(40, 40, 40);
+  backdrop-filter: blur(8px);
+  filter: drop-shadow(0 0 0.4rem black);
+  transition: all 0.2s ease-in-out;
+  transition-delay: 0.2s;
+}
+.main > div:hover {
+  background-color: rgba(5, 40, 60, 0.5);
+  transform: scale(1);
+  box-shadow: 0 0 10px black;
+  border: solid 3px rgba(10, 160, 160, 0.6);
+  transition: all 0.2s ease-in-out;
+}
+.main > div > div {
+  min-height: 300px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.renderer {
+  /* font-size: 100% !important; */
+  flex: 1;
+  background: rgba(20, 20, 20, 0.8);
+  /* overflow-y:scroll; */
+}
+.ProseMirror-menubar {
+  position: relative !important;
+}

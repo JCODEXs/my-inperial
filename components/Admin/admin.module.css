@@ -1,0 +1,70 @@
+.asset {
+  gap: 0px;
+  border-top: solid 1.5px rgba(40, 40, 40, 0.8);
+  border-bottom: solid 1.5px rgba(40, 40, 40, 0.8);
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  background: rgba(10, 10, 10, 0.9);
+  transition: all 0.2s;
+  backdrop-filter: blur(10px);
+}
+.asset:hover {
+  background: rgba(10, 30, 30, 0.9);
+}
+.main {
+  flex: 1;
+  height: 100vh;
+  width: 100%;
+  max-height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: rgb(5, 5, 5);
+}
+.main iframe {
+  width: 100%;
+  height: 100%;
+  background: rgba(250, 250, 250, 0.95);
+}
+.todo {
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  max-height: 100%;
+  overflow-y: scroll;
+  filter: drop-shadow(0 0 0.3rem black);
+  border-radius: 10px 0px 0px 0px;
+  border-top: 2px solid rgba(250, 250, 250, 0.2);
+  border-left: 2px solid rgba(250, 250, 250, 0.2);
+  border-right: 2px solid rgba(250, 250, 250, 0.2);
+}
+.noMagic {
+  display: flex;
+  height: 100%;
+  filter: drop-shadow(0 0 0.5rem black);
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.noMagic img {
+  height: 400px;
+}
+.viewport {
+  position: relative;
+  /* overflow-y: auto; */
+  /* overflow-x: hidden; */
+  /* opacity: 0; */
+}
+.driver {
+  background: rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(100, 100, 100, 0.6);
+  filter: drop-shadow(0 0 0.3rem black);
+  z-index: 1;
+}

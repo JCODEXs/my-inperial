@@ -1,0 +1,27 @@
+.main {
+  padding: 10px;
+  max-width: 1000px;
+  cursor: wait;
+  margin: auto;
+}
+.main > img {
+  height: 160px;
+}
+.loadingBar {
+  color: black;
+  text-align: center;
+  /* mix-blend-mode: difference; */
+  margin-right: auto;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.loadingBar_ext {
+  /* min-width: 100%; */
+  background: black;
+  border-radius: 5px;
+  border: solid 2px rgba(250, 250, 250, 0.6);
+  overflow: hidden;
+}
+.loadingSubmission {
+  margin: 10px;
+}

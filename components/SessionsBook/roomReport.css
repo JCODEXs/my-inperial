@@ -1,0 +1,48 @@
+.room-report {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .room-report-day {
+    width: calc(33.3% - 10px);
+    margin-bottom: 20px;
+  }
+  
+  .room-report-room {
+    margin-bottom: 10px;
+  }
+  
+  .room-report-image {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 2px solid #ccc;
+    border-radius: 5%;
+  }
+  
+  .room-report-image:hover {
+    transform: scale(1.2);
+    border-color: #333;
+  }
+
+  .room-report-tag {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+  
+  .room-report-image:hover .room-report-tag {
+    opacity: 1;
+  }
+  

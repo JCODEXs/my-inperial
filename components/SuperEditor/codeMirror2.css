@@ -1,0 +1,108 @@
+.commit {
+  background: rgba(0, 0, 0, 0.8);
+
+  margin-bottom: 4px;
+  display: flex;
+}
+.commit:hover {
+  background: palegoldenrod;
+  color: black;
+  font-weight: 600;
+}
+.commit-revert {
+  float: right;
+}
+.commit-msg {
+  flex: 1;
+}
+.commit-time {
+  background: #5ab;
+  padding: 0 5px;
+  color: white;
+  font-size: 90%;
+}
+.commit-blame {
+  background: #ff8;
+}
+.blame-info {
+  position: fixed;
+  border: 1px solid silver;
+  background: white;
+  padding: 3px 8px;
+  z-index: 3;
+}
+.blame-wrap {
+  /* position: absolute;
+  right: 0;
+  top: 0; */
+}
+.commit-wrap {
+}
+#commit {
+  display: flex;
+  /* margin: 6px 0; */
+  position: relative;
+  padding-left: 3px;
+  background: whitesmoke;
+  color: black;
+  gap: 10px;
+}
+#commit > button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+#commit > * {
+  max-height: 1em;
+}
+.blame-marker {
+  background: palegoldenrod;
+  color: black;
+}
+.ProseMirror-menubar {
+  position: sticky !important;
+  top: 0px;
+  max-height: 20px !important;
+
+  background: black !important;
+  color: rgb(192, 192, 192) !important;
+  transition: all 0.1s ease-in-out;
+  user-select: none;
+  transition-delay: 0.1s;
+}
+.ProseMirror-menu-active {
+  color: black !important;
+}
+.sortable-chosen {
+  opacity: 0.8;
+  filter: blur(1px);
+}
+
+.sortable-drag {
+  filter: blur(10px);
+}
+.sortable-chosen .ProseMirror-menubar {
+  background: paleturquoise !important;
+  color: black !important;
+}
+.sortable-fallback .ProseMirror-menubar {
+  background: palegreen !important;
+  color: black !important;
+}
+/* #swappable > div:hover .ProseMirror-menubar {
+  background: palegoldenrod !important;
+  color: black !important;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.85);
+  border-bottom: 1px solid black;
+} */
+.ProseMirror-menu-active {
+  background: black !important;
+
+  color: silver !important;
+  box-shadow: 0 0 5px black;
+}
